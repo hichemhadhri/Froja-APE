@@ -4,7 +4,7 @@ var vid = document.getElementsByTagName('video')[0];
 
 
    isad=true;
-
+// getgffhfghfg
 vid.onplay = function(){
   isad=vid.getAttribute('src').search('blob')==-1;
 console.log(isad);
