@@ -1,34 +1,32 @@
 console.log("hello wolrd ");
 
-var vid = document.getElementsByTagName('video')[0];
+  vid = document.getElementsByTagName('video')[0];
 
- buton=document.getElementsByClassName('vjs-big-play-button')[0];
-
-
- console.log(typeof buton);
+ var buton=document.getElementsByClassName('vjs-big-play-button')[0];
 
 
+vid.muted=true;
+ var promise = document.querySelector('video').play();
 
+ if (promise !== undefined) {
+      promise.then(_ => {
+      // Autoplay started!
+  }).catch(error => {
+     // Autoplay was prevented.
+     // Show a "Play" button so that user can start playback.
+   });
+ }
+ vid.muted=false;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ promise =vid.requestFullscreen();
+ if (promise !== undefined) {
+      promise.then(_ => {
+      // Autoplay started!
+  }).catch(error => {
+     // Autoplay was prevented.
+     // Show a "Play" button so that user can start playback.
+   });
+ }
 
 
    isad=true;
