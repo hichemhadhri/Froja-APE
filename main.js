@@ -2,6 +2,34 @@ console.log("hello wolrd ");
 
 var vid = document.getElementsByTagName('video')[0];
 
+ buton=document.getElementsByClassName('vjs-big-play-button')[0];
+
+
+ console.log(typeof buton);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    isad=true;
 // getgffhfghfgh
